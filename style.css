@@ -308,6 +308,7 @@ textarea {
   resize: none;
 }
 
+
 #about-section,
 #Compétences,
 #Réalisations,
@@ -437,8 +438,15 @@ h1 span {
     .project {
     flex: 1 1 calc(33.333% - 20px); /* Trois projets par ligne avec un espace entre eux */
     margin: 10px;
+    background-color: #111;
+    border-radius: 15px;
+    
     }
     
+    .project p {
+      color: #FEF7F9;
+    }
+
     .project img {
     max-width: 80%; /* S’assurer que les images s’adaptent au conteneur */
     }
