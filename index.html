@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ceci est mon portfolio" />
+    <title>Mon portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="#">
+            <label class="logo-txt">LM</label>
+          </a>
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="hamburger-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-list">
+          <li><a class="active" href="#Accueil">Accueil</a></li>
+          <li><a href="#about-section">Profil</a></li>
+          <li><a href="#Compétences">Compétences</a></li>
+          <li><a href="#Réalisations">Réalisations</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="Accueil" class="hero-section">
+        <img
+          src="./assets/img/hero-img.jpg"
+          class="hero-background"
+          alt="main image"
+        />
+        <div>
+          <h1>
+            <span>Laadjal Mohamed</span>
+          </h1>
+          <p>Développeur web full-stack</p>
+        </div>
+      </div>
+    </main>
+
+    <section id="about-section" class="about-section">
+      <div class="boxed-about-section">
+        <div class="about-image">
+          <img src="./assets/img/profil-pic.jpeg" alt="profile picture" />
+        </div>
+        <div class="about-text">
+          <h2>À propos de moi</h2>
+          <p>
+            Étudiant à DonkeySchool (Paris), je me forme en tant que Concepteur
+            Développeur d'Applications. Passionné par l'innovation, je crée des
+            applications web performantes et centrées sur l'utilisateur. Prêt à
+            transformer vos idées en réalités numériques.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Compétences" class="skills-section">
+      <h2>Compétences techniques</h2>
+      <div class="boxed-logos">
+        <img src="./assets/logos/logo-js.svg" alt="logo javascript" />
+        <img src="./assets/logos/logo-angular.svg" alt="logo angular" />
+        <img src="./assets/logos/logo-symfony.svg" alt="logo symfony" />
+        <img src="./assets/logos/logo-ts.svg" alt="logo typescript" />
+      </div>
+    </section>
+
+    <section id="Réalisations" class="projects">
+      <h2>Mes réalisations</h2>
+      <div class="boxed-projects">
+        <!-- Projet 1 -->
+        <div class="project">
+          <input id="ch1" type="checkbox" />
+          <img
+            src="./assets/img/car_aid_landing_page_design_tubik-1.png"
+            alt="image project 1"
+          />
+          <p>Ceci est une application d'assistance automobile fictive...</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur tenetur odio sequi libero amet aliquam doloribus,
+              maxime blanditiis obcaecati hic, laudantium aperiam, nisi vero
+              reprehenderit!
+            </p>
+            <label for="ch1">Voir moins</label>
+          </div>
+          <label for="ch1">Voir plus</label>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="project">
+          <input id="ch2" type="checkbox" />
+          <img
+            src="./assets/img/dating_app_landing_page_tubik.png"
+            alt="image project 2"
+          />
+          <p>Ceci une est une application de rencontre fictive...</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur tenetur odio sequi libero amet aliquam doloribus,
+              maxime blanditiis obcaecati hic, laudantium aperiam, nisi vero
+              reprehenderit!
+            </p>
+            <label for="ch2">Voir moins</label>
+          </div>
+          <label for="ch2">Voir plus</label>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="project">
+          <input id="ch3" type="checkbox" />
+          <img
+            src="./assets/img/attachment_98184532.webp"
+            alt="image project 3"
+          />
+          <p>Ceci est une boutique de montres en ligne fictive...</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur tenetur odio sequi libero amet aliquam doloribus,
+              maxime blanditiis obcaecati hic, laudantium aperiam, nisi vero
+              reprehenderit!
+            </p>
+            <label for="ch3">Voir moins</label>
+          </div>
+          <label for="ch3">Voir plus</label>
+        </div>
+      </div>
+    </section>
+
+    <form id="Contact">
+      <h2>Contactez-moi</h2>
+      <div>
+        <label for="nom">Nom et prénom :</label>
+        <input type="text" id="nom" name="nom" />
+      </div>
+      <div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="objet">Objet :</label>
+        <input type="text" id="objet" name="objet" />
+      </div>
+      <div>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+      <div>
+        <button type="submit">Envoyer</button>
+      </div>
+    </form>
+
+    <footer>
+      <p>&copy; Laadjal Mohamed - 2024</p>
+      <a href="https://github.com/MoLaadjal" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:laadjalmohamed@gmail.com">
+        <span class="material-symbols-outlined">mail</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/mohamed-laadjal-646751282/"
+        target="_blank"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
